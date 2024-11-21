@@ -1,0 +1,114 @@
+<!-- establezco tipo codigo-->>
+<!DOCTYPE html>
+<!-- lenguaje -->>
+<html lang="es">
+    <!-- crear la cabecera-->
+    <head>
+        <!-- 
+1. <meta>: etiqueta otorga metadatos al doc HTML
+2. charset="utf-8": Define codificación de caracteres del doc  UTF-8.
+   - UTF-8 es una codificación estándar que soporta la mayoría de los caracteres de los diferentes idiomas, incluidos caracteres especiales (como ñ, á, ü) y símbolos.
+   - Esto asegura que el contenido de la página se muestre correctamente en todos los navegadores y dispositivos.
+3. Nota: No lleva una barra inclinada al final, ya que las etiquetas <meta> son elementos autocontenidos y no requieren cierre explícito.
+-->
+        <meta charset="utf-8">
+        <title>my-first-blog</title>
+        <!-- crear link para vincular estilo.css -->
+         <link rel="stylesheet" href="estilo.css"/>
+    </head>
+    <!-- crear el cuerpo-->
+     <body>
+         <!-- Contenido visible de la página -->
+        <!--Voy a dividir la pagina web head/barra de navegacion-->
+        <div id="contenedor">
+            <!--Organiza el contenido del encabezado en una fila, colocando el título a la izquierda y la imagen a la derecha, sin flotación-->
+            <header style="display: flex; align-items: center; justify-content: space-between; background-color: rgb(178, 190, 144); padding: 10px;">
+                <h1 style="margin: 0; color: #244931;">DESARROLLO de APLICACIONES en RED</h1>
+                <!--Añadir mi imagen-->
+                <img src="imagen2.jpg" alt="Imagen Network" style="float: right; width: 150px; height: auto; margin: 10px;">
+        </header>
+        </header>
+
+            </header>
+            <!--Lista de navegacion desordenada-->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Principal</a></li>
+                    <li><a href="ayuda.html">Ayuda</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                    
+                </ul>
+
+            </nav>
+            <!--Creo otra division para-->
+            <!-- 
+1. <div> :         Contenedor genérico, se usa para agrupar contenido o aplicar estilos.
+2. class="clear" : La clase "clear" probablemente está definida en el archivo CSS asociado. 
+Generalmente, se utiliza para "limpiar" flotaciones (clear floats) cuando hay elementos flotantes (float) en el diseño.
+-->
+            <div class="clear"></div>
+            <!-- 
+1. <section>: semántica HTML5 definir sección de contenido relacionado.
+   - usarla cuando el contenido dentro de la sección tiene un propósito específico, 
+   como un artículo, una lista de productos, o una parte de un blog.
+
+2. id="contenido": 
+   - El atributo `id` asigna identificador único al elemento "contenido"
+   - Luego puede ser usado por CSS para aplicar estilos específicos o por, JavaScript para manipular el elemento directamente.
+-->
+            <section id="contenido">
+                
+                <article class="article">
+                    <!--Este enlace apuntara a su contenido *codigo mejorado-->
+                    <h2><a href="actividad1.html">Actividad 1</a></h2>
+                    <p>Laboratorio: Creación de un blog</p>
+                    <p>El blog por crear deberá contener un mínimo de 3 entradas sencillas (texto + imágenes).</p>
+                </article>
+                <article class="article">
+                    <!--Este enlace apuntara a su contenido -->
+                    <h2><a href="actividad2.html">Actividad 2</a></h2>
+                    <p>Tutorial de una Tecnología/Framework </p>
+                    <p>Crear un tutorial que permita conocer los detalles de un Framework dado.</p>
+                </article>
+                <article class="article">
+                    <h2><a href="actividad3.html">Actividad 3</a></h2>
+                    <p>Uso de una API en aplicación de componentes.</p>
+                    <p>Realizar una aplicación web capaz de obtener y procesar datos ofrecidos por un portal.</p>
+                </article>
+                <!--Insertar imagen de UNIR-->
+                <img src="imagen1.jpg" alt="imagen1" style="display: block; margin: 10px auto; width: 400px; height: auto;">
+                
+                
+            </section>
+
+            <!-- 
+    <aside>: semántica añadir contenido complementario al principal, añade bloque con formulario de búsqueda
+    <form>: Define un formulario para recopilar datos del usuario
+    <input type="text">: Crea un campo de texto para que el usuario introduzca información.
+    -->
+            <aside>
+                <h1>¿Qué buscas?</h1>
+                <form action="resultados.html" method="get">
+                    <input type="text" name="query" placeholder="Escribe tu búsqueda aquí" required>
+                    <input type="submit" value="Buscar">
+                </form>
+                <!-- Imagen dinámica (GIF) -->
+            <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3M0aXp6M29mZ240Mmp0MGp2ZTZoaWx0OXIycDVhN3U4dGsxZmo0byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tQHtASL5mC8cKPyfSU/giphy-downsized-large.gif" 
+            alt="GIF dinámico" 
+            style="display: block; margin: 40px auto; width: 100%; height: auto;">
+            </aside>
+            <div class="clear"></div>
+
+            <footer>
+                6i163r70 Hernández &copy; 2024
+            </footer>
+
+
+
+        </div>
+
+     </body>
+
+
+
+</html>
